@@ -12,7 +12,7 @@ if ($_POST ["reference"] !=  "") {
 
 ##scan db to prevent dupe urls
 $urlexists = 0;
-$handle = fopen("/home/England/www/gm.ma.cx/urls.txt", "r");
+$handle = fopen("/somewhere/urls.txt", "r");
 if ($handle) {
     while (($buffer = fgets($handle, 4096)) !== false) {
         if (trim($buffer,"\n") == trim($_POST ["longurl"],"\n")) {
@@ -29,7 +29,7 @@ fclose($handle);
 
 ##add to db if its unique todo: add locking file
 if ($urlexists == 0) {
-	$handle = fopen("/home/England/www/gm.ma.cx/urls.txt", 'a') or die("can't open file");
+	$handle = fopen("/somewhere/urls.txt", 'a') or die("can't open file");
 	$data = $_POST ["shorturl"] . "\n";
 	fwrite($handle, $data);
         $data = $_POST ["longurl"] . "\n";
