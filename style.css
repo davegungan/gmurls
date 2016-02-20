@@ -1,0 +1,36 @@
+h1 {
+color: green;
+text-align: center;
+font-size: 30pt;
+}
+
+#suburls {
+colour: red;
+ackground-color: gray;
+text-align: center;
+font-size: 16pt;
+}
+
+#urllist {
+border-style: solid;
+td-border-style: solid;
+width: 100%;
+
+}
+
+#urllist td {
+text-align: center;
+border-style: solid;
+}
+
+#footer {
+colour: black;
+text-align: center;
+font-size: 8pt;
+width: 100%;
+}
+
+#footer td {
+text-align: center;
+}
+
